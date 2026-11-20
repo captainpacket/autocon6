@@ -48,6 +48,8 @@ I only put things on slides that I've run. Backup slide 38 is a one-line status 
 
 [github.com/forwardnetworks/skyforge](https://github.com/forwardnetworks/skyforge) has the patches, the netlab topologies and an install guide, which is what you need to build something similar. The control plane isn't published yet, and I don't have a date.
 
+The repo is source-available under the Functional Source License (FSL-1.1-ALv2), not open source. The patches keep each upstream's license, and the blueprints keep theirs.
+
 ## What it's built on
 
 - [netlab](https://netlab.tools): turns one topology file into a full config for every device
