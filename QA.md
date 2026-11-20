@@ -13,6 +13,8 @@ I can't give you a data plane number. That wasn't what pushed me off it.
 
 **Update:** a clabernetes maintainer got in touch to say the nested setup is gone. The release notes agree: v0.9.0 (30 Sep 2026) replaced the nested launcher runtime with a native Kubernetes runtime, and the architecture docs now say each node is a device Pod with no Docker daemon inside it. My experience above is from before that, so it describes the old design. I haven't tried 0.9, so I can't tell you whether boot time or observability got better. Worth another look. Details at [c9s.run](https://c9s.run).
 
+I'm not rushing back, for one reason. For VM-based devices, 0.9 still runs the VM inside a container through the vrnetlab entrypoint, and that hides what the VM is doing. Running them on KubeVirt natively makes the VM visible to Kubernetes, which is what I wanted. That only affects VMs. If your devices are container-native, like SR Linux, the 0.9 change may be all you need.
+
 There's also a fit problem. containerlab wants a container per device, which is fine for container-native NOSes (SR Linux is one). For devices that ship as VMs you end up with a VM inside a container inside a pod, and each layer has its own opinions about networking and resources. [Slide 7](SLIDES.md#7-why-not-just-use-containerlab) is the short version.
 
 KNE gives me a pod or a VM per device, and Kubernetes places each one. That isn't free either. I carry a meshnet fork, the MTU between nodes is lower, and `Eth0/2` isn't a legal Linux interface name, so the pod waits forever. I'd still make the same call, but it moved the cost around, it didn't remove it.
