@@ -47,7 +47,7 @@ I only put things on slides that I've run. Backup slide 38 is a one-line status 
 
 ## Skyforge
 
-[github.com/forwardnetworks/skyforge](https://github.com/forwardnetworks/skyforge) has the patches, the netlab topologies and an install guide, which is what you need to build something similar. The control plane isn't published yet, and I don't have a date.
+[github.com/forwardnetworks/skyforge](https://github.com/forwardnetworks/skyforge) has the patches, the netlab topologies and an install guide, which is what you need to build something similar. The control plane, which is where the change flow and the checks live, isn't in there yet. It's being prepared and will be published shortly.
 
 The repo is source-available under the Functional Source License (FSL-1.1-ALv2), not open source. The patches keep each upstream's license, and the blueprints keep theirs.
 
