@@ -21,6 +21,7 @@ The talk is mostly about what went wrong on the way. The short version:
 | [`slides/AC6_Every_Automation_Demo_Lies.pdf`](slides/AC6_Every_Automation_Demo_Lies.pdf) | PDF. Every click-reveal is shown at once. |
 | [`slides/AC6_Every_Automation_Demo_Lies.pptx`](slides/AC6_Every_Automation_Demo_Lies.pptx) | PowerPoint, with the click-by-click reveals. Speaker notes removed. |
 | [`SLIDES.md`](SLIDES.md) | Every slide as an image, with titles, so you can read it in the browser. |
+| [`QA.md`](QA.md) | Questions that came in after the talk, with answers. |
 
 33 slides in the talk, plus 9 backup slides at the end (extra detail, a status table, and the act dividers).
 
